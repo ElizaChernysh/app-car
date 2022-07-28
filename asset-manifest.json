@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/app-car/static/css/main.c1128526.css",
-    "main.js": "/app-car/static/js/main.34f5b6f0.js",
+    "main.css": "/app-car/static/css/main.d09c1338.css",
+    "main.js": "/app-car/static/js/main.36cdf026.js",
     "static/js/787.e4a59b44.chunk.js": "/app-car/static/js/787.e4a59b44.chunk.js",
     "static/media/background.jpg": "/app-car/static/media/background.99d641c235cf545e17fa.jpg",
     "static/media/logo-company.svg": "/app-car/static/media/logo-company.805f4318f3f6965d23655e0ce243448f.svg",
     "static/media/instagram.svg": "/app-car/static/media/instagram.671a1e8fd132e455f615d7356d19555c.svg",
     "index.html": "/app-car/index.html",
     "static/media/facebook.svg": "/app-car/static/media/facebook.a1623cea28865aab747a33b3309b8e0f.svg",
-    "main.c1128526.css.map": "/app-car/static/css/main.c1128526.css.map",
-    "main.34f5b6f0.js.map": "/app-car/static/js/main.34f5b6f0.js.map",
+    "main.d09c1338.css.map": "/app-car/static/css/main.d09c1338.css.map",
+    "main.36cdf026.js.map": "/app-car/static/js/main.36cdf026.js.map",
     "787.e4a59b44.chunk.js.map": "/app-car/static/js/787.e4a59b44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1128526.css",
-    "static/js/main.34f5b6f0.js"
+    "static/css/main.d09c1338.css",
+    "static/js/main.36cdf026.js"
   ]
 }
