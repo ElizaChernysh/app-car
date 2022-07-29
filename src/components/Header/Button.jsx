@@ -13,7 +13,7 @@ export const ButtonComponent = () => {
 const CustomButton = styled.button`
   color: #f8f8f8;
   border-radius: 15px;
-  border-color: #f8f8f8;
+  border: 2px solid #F8F8F8;
   padding: 16px 90px;
   font-style: normal;
   font-weight: 500;
@@ -24,6 +24,13 @@ const CustomButton = styled.button`
     color: #000;
     border-color: none;
     background-color: white;
+  }
+
+  &:focus {
+    color: #f8f8f8;
+    border-color: #f8f8f8;
+    background-color: transparent;
+    box-shadow: none;
   }
 
 `;
