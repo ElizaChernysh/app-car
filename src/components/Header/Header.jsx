@@ -7,6 +7,7 @@ import { Button } from 'react-bootstrap';
 import { ButtonComponent } from "./Button";
 
 export const Header = () => {
+
   return (
     <header className="header">
       <div className="container">
@@ -51,7 +52,7 @@ export const Header = () => {
             </p>
           </div>
 
-          <ButtonComponent/>
+          <ButtonComponent />
         </section>
       </div>
     </header>

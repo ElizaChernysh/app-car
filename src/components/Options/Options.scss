@@ -1,0 +1,40 @@
+@import "../../utils/vars";
+
+.Options {
+  padding: 98px 0 100px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-title-main;
+
+    margin-bottom: 80px;
+  }
+
+  &__selects {
+    display: flex;
+
+    margin-bottom: 24px;
+  }
+
+  &__select {
+    margin-right: 20px;
+  }
+
+  &__button {
+    color: $color-header-white;
+    background: $color-tomato;
+    border-radius: 15px;
+    border: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+
+    padding: 14px 120px;
+
+  }
+}
