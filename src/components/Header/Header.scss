@@ -4,6 +4,7 @@
   background-image: url(../../image/header/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 9px;
 
   &__navigation {
     display: flex;
@@ -11,7 +12,7 @@
     align-items: center;
   }
 
-  &__container-links {
+  &__wrapper-links {
     display: flex;
   }
 

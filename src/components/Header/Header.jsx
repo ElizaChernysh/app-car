@@ -10,13 +10,13 @@ export const Header = () => {
 
   return (
     <header className="header">
-      <div className="container">
+      <div className="wrapper">
         <section className="header__navigation">
           <a href="/" className="header__logo logo">
             <img src={logo} alt="Logo of Monza Motorsports" />
           </a>
 
-          <div className="header__container-links">
+          <div className="header__wrapper-links">
             <nav className="header__nav">
               <ul className="header__list">
                 <li className="header__item">Inventory</li>

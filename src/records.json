@@ -1,0 +1,201 @@
+[
+  {
+    "id": 0,
+    "year": 2019,
+    "make": "34,888",
+    "model": "Volkswagen Tiguan",
+    "trim": "Diesel",
+    "mileage": "19,855 km",
+    "image": "car-1"
+  },
+  {
+    "id": 1,
+    "year": 2014,
+    "make": "27,875",
+    "model": "Toyota Highlander XLE",
+    "trim": "Gas",
+    "mileage": "69,000 km",
+    "image": "car-2"
+  },
+  {
+    "id": 2,
+    "year": 2017,
+    "make": "38,775",
+    "model": "Lexus RX 350 LUXURY",
+    "trim": "Gas",
+    "mileage": "39,850 km",
+    "image": "car-3"
+  },
+  {
+    "id": 3,
+    "year": 2016,
+    "make": "23,728",
+    "model": "Toyota Highlander LE A...",
+    "trim": "Gas",
+    "mileage": "104,000 km",
+    "image": "car-4"
+  },
+  {
+    "id": 4,
+    "year": 2017,
+    "make": "11,788",
+    "model": "Hyundai Elantra",
+    "trim": "Gas",
+    "mileage": "95,000 km",
+    "image": "car-5"
+  },
+  {
+    "id": 5,
+    "year": 2016,
+    "make": "38,878",
+    "model": "Mercedes-Benz GLE-Cl...",
+    "trim": "Diesel",
+    "mileage": "59,800 km",
+    "image": "car-6"
+  },
+  {
+    "id": 6,
+    "year": 2015,
+    "make": "18,620 ",
+    "model": "Toyota Venza AWD XLE...",
+    "trim": "Gas",
+    "mileage": "99,000 km",
+    "image": "car-7"
+  },
+  {
+    "id": 7,
+    "year": 2016,
+    "make": "34,888",
+    "model": "Lexus RX 350 F-SPORT",
+    "trim": "Gas",
+    "mileage": "86,000 km",
+    "image": "car-8"
+  },
+  {
+    "id": 8,
+    "year": 2019,
+    "make": "34,888",
+    "model": "Volkswagen Tiguan",
+    "trim": "Diesel",
+    "mileage": "19,855 km",
+    "image": "car-9"
+  },
+  {
+    "id": 9,
+    "year": 2014,
+    "make": "27,875",
+    "model": "Toyota Highlander XLE",
+    "trim": "Gas",
+    "mileage": "69,000 km",
+    "image": "car-10"
+  },
+  {
+    "id": 10,
+    "year": 2017,
+    "make": "38,775",
+    "model": "Lexus RX 350 LUXURY",
+    "trim": "Gas",
+    "mileage": "39,850 km",
+    "image": "car-11"
+  },
+  {
+    "id": 11,
+    "year": 2016,
+    "make": "23,728",
+    "model": "Toyota Highlander LE A...",
+    "trim": "Gas",
+    "mileage": "104,000 km",
+    "image": "car-12"
+  },
+  {
+    "id": 12,
+    "year": 2019,
+    "make": "34,888",
+    "model": "Volkswagen Tiguan",
+    "trim": "Diesel",
+    "mileage": "19,855 km",
+    "image": "car-13"
+  },
+  {
+    "id": 13,
+    "year": 2014,
+    "make": "27,875",
+    "model": "Toyota Highlander XLE",
+    "trim": "Gas",
+    "mileage": "69,000 km",
+    "image": "car-14"
+  },
+  {
+    "id": 14,
+    "year": 2017,
+    "make": "38,775",
+    "model": "Lexus RX 350 LUXURY",
+    "trim": "Gas",
+    "mileage": "39,850 km",
+    "image": "car-15"
+  },
+  {
+    "id": 15,
+    "year": 2016,
+    "make": "23,728",
+    "model": "Toyota Highlander LE A...",
+    "trim": "Gas",
+    "mileage": "104,000 km",
+    "image": "car-16"
+  },
+  {
+    "id": 16,
+    "year": 2017,
+    "make": "11,788",
+    "model": "Hyundai Elantra",
+    "trim": "Gas",
+    "mileage": "95,000 km",
+    "image": "car-17"
+  },
+  {
+    "id": 17,
+    "year": 2016,
+    "make": "38,878",
+    "model": "Mercedes-Benz GLE-Cl...",
+    "trim": "Diesel",
+    "mileage": "59,800 km",
+    "image": "car-18"
+  },
+  {
+    "id": 18,
+    "year": 2015,
+    "make": "18,620 ",
+    "model": "Toyota Venza AWD XLE...",
+    "trim": "Gas",
+    "mileage": "99,000 km",
+    "image": "car-19"
+  },
+  {
+    "id": 19,
+    "year": 2016,
+    "make": "34,888",
+    "model": "Lexus RX 350 F-SPORT",
+    "trim": "Gas",
+    "mileage": "86,000 km",
+    "image": "car-20"
+  },
+  {
+    "id": 20,
+    "year": 2019,
+    "make": "34,888",
+    "model": "Volkswagen Tiguan",
+    "trim": "Diesel",
+    "mileage": "19,855 km",
+    "image": "car-21"
+  },
+  {
+    "id": 21,
+    "year": 2014,
+    "make": "27,875",
+    "model": "Toyota Highlander XLE",
+    "trim": "Gas",
+    "mileage": "69,000 km",
+    "image": "car-22"
+  }
+]
+

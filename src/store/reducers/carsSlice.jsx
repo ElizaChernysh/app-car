@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
-import CarsList from '../../cars.json';
+import CarsList from '../../records.json';
 
 const initialState = {
-  cars: CarsList.cars,
+  cars: CarsList,
 };
 
 export const carsSlice = createSlice({

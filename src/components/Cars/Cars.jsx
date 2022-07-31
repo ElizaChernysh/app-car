@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
+import './Cars.scss';
 
 const Cars = () => {
   const cars = useSelector((state) => state.cars.cars);
@@ -7,12 +8,12 @@ const Cars = () => {
   console.log(cars);
 
   return (
-    <div>
-      <ul>
+    <div className='Cars wrapper'>
+      <ul className='Cars__list'>
         {
           cars.map(car => (
-            <li key={car.id}>
-              <img src={car.image} alt="cars"/>
+            <li key={car.id} className="Cars__item">
+            <img src={require(`../../image/images/${car.image}.jpg`)} alt="car"/>
               <p>
                 <span>{car.year}{' '}</span>{car.model}
               </p>
@@ -22,7 +23,8 @@ const Cars = () => {
           ))
         }
       </ul>
-    </div>
+
+    </div> 
   )
 }
 
