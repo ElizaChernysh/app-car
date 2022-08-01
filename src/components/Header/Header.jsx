@@ -1,9 +1,8 @@
 import React from "react";
 import logo from "../../image/header/logo-company.svg";
-import "./Header.scss";
 import facebook from "../../image/header/facebook.svg";
 import instagram from "../../image/header/instagram.svg";
-import { Button } from 'react-bootstrap';
+import "./Header.scss";
 import { ButtonComponent } from "./Button";
 
 export const Header = () => {

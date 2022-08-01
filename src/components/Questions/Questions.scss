@@ -1,12 +1,20 @@
+@import "../../utils/vars";
+
 .Questions {
-  padding: 100px 0 150px;
+  background-color: $color-background;
+  padding: 100px 210px 150px;
 
   &__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: $color-title-grey;
+
     margin-bottom: 80px;
     text-align: center;
   }
 }
 
 .CustomToggle {
-  
 }

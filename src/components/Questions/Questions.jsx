@@ -10,8 +10,8 @@ const Questions = () => {
         <h2 className="Questions__title">Popular questions</h2>
 
         <ul className="accordion">
-      {accordionData.map(({ heading, content }) => (
-        <Accordion heading={heading} content={content} />
+      {accordionData.map(({ heading, content, title }) => (
+        <Accordion heading={heading} content={content} title={title} />
       ))}
     </ul>
       </div>

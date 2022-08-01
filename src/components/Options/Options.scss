@@ -5,7 +5,7 @@
 }
 
 .Options {
-  padding: 98px 0 26px;
+  padding: 98px 0 100px;
   background-color: $color-background;
 
   &__title {
@@ -15,7 +15,7 @@
     line-height: 75px;
     text-transform: uppercase;
     text-align: center;
-    color: $color-title-main;
+    color: $color-title-grey;
 
     margin-bottom: 80px;
   }
