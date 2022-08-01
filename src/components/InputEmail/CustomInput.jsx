@@ -42,6 +42,7 @@ const CustomControl = styled.input`
     border: 1px solid #8d8d8d;
   }
 `;
+
 const CustomButton = styled.button`
   color: #000;
   font-size: 15px;
