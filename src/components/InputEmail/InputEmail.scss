@@ -1,0 +1,44 @@
+@import "../../utils/vars";
+
+.InputEmail {
+  background-color: $color-background-email;
+  padding: 40px 0;
+  color: $color-text-white;
+
+  &__container {
+    display: flex;
+    // justify-content: space-between;
+  }
+
+  &__info {
+    margin-right: 20px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  // &__input {
+  //   display: flex;
+  //   justify-content: center;
+  // }
+}
+
+.Input-group {
+  display: flex;
+  align-items: center;
+}
+
+.success {
+  border: 1px solid #507A36;
+}
+

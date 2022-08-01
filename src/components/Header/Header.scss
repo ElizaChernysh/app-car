@@ -19,7 +19,7 @@
   &__list {
     display: flex;
     margin-right: 45px;
-    color: $color-header-white;
+    color: $color-text-white;
   }
 
   &__item {
@@ -39,7 +39,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    color: $color-header-white;
+    color: $color-text-white;
   }
 
   &__title {

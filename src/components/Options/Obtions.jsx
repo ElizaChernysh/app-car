@@ -25,9 +25,10 @@ const Options = () => {
 
           <Form.Select className="Options__select">
             <option>Make</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option value="Honda">Honda</option>
+            <option value="Kia">Kia</option>
+            <option value="Toyota">Three</option>
+            <option value="Volkswagen">Three</option>
           </Form.Select>
 
           <Form.Select className="Options__select">

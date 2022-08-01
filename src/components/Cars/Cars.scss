@@ -6,10 +6,59 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 295px);
+    // grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+    gap: 20px;
+
+    font-style: normal;
+    font-weight: 400;
   }
 
   &__item {
     background-color: $color-background-cards;
     box-shadow: $shodow-cards;
+  }
+
+  // &__image {
+  //   margin-bottom: 20px;
+  // }
+
+  &__container {
+    padding: 20px 20px 35px;
+  }
+
+  &__model {
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 16px;
+
+    color: $color-text;
+  }
+
+  &__year {
+    font-size: 17px;
+    line-height: 26px;
+    color: $color-cards-grey;
+
+    margin-right: 8px;
+  }
+
+  &__info {
+    color: $color-cards-grey;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+
+    margin-bottom: 26px;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: $color-text;
+    margin: 0;
   }
 }

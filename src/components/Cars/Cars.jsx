@@ -13,12 +13,16 @@ const Cars = () => {
         {
           cars.map(car => (
             <li key={car.id} className="Cars__item">
-            <img src={require(`../../image/images/${car.image}.jpg`)} alt="car"/>
-              <p>
-                <span>{car.year}{' '}</span>{car.model}
+            <img 
+              className='Cars__image'
+              src={require(`../../image/images/${car.image}.jpg`)} alt="car"/>
+              <div className='Cars__container'>
+              <p className='Cars__model'>
+                <span className='Cars__year'>{car.year}</span>{car.model}
               </p>
-              <p>{car.mileage}{' | '}Automatic{' | '}{car.trim}</p>
-              <p>${car.make}</p>
+              <p className='Cars__info'>{car.mileage}{' | '}Automatic{' | '}{car.trim}</p>
+              <p className='Cars__price'>${car.make}</p>
+              </div>
             </li>
           ))
         }

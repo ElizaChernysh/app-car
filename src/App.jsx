@@ -2,12 +2,16 @@ import { Header } from './components/Header/Header';
 import './App.scss';
 import './custom.scss';
 import Options from './components/Options/Obtions';
+import InputEmail from './components/InputEmail/InputEmail';
+import Questions from './components/Questions/Questions';
 
 export const App = () => {
   return (
     <div className="App">
       <Header/>
       <Options/>
+      <InputEmail/>
+      <Questions/>
       {/* {
           Records.map(car => (
             <div key={car.id}>
