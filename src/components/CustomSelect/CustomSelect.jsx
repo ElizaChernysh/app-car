@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { sortCarsByPublication, sortCarsByPriceUp, sortCarsByPriceDown,  sortCarsByMileageDown, sortCarsByMileageUp } from "../../store/reducers/carsSlice";
 import arrowAscending from "../../image/arrows/arrows-first.svg";
 import arrowDescending from "../../image/arrows/arrows-second.svg";
 import "./CustomSelect.scss";
@@ -7,6 +9,8 @@ export const CustomSelect = () => {
   const [isOptionsOpen, setIsOptionsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(0);
   const [arrowDirection, setArrowDirection] = useState("up");
+
+  const dispatch = useDispatch();
 
   const optionsList = [
     "Publication date (descending)",
@@ -20,12 +24,18 @@ export const CustomSelect = () => {
 
   useEffect(() => {
     const value = optionsList[selectedOption];
+    console.log(value);
 
     if (value.includes("ascending")) {
       setArrowDirection("up");
     } else if (value.includes("descending")) {
       setArrowDirection("down");
     }
+
+    // if (value === 'Price (ascending)') {
+    //   dispatch(sortCarsByPublication('price'))
+    //   dispatch(sortCarsByPublication('year'));
+    // }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedOption]);
 
@@ -36,6 +46,31 @@ export const CustomSelect = () => {
   const setSelectedThenCloseDropdown = (index) => {
     setSelectedOption(index);
     setIsOptionsOpen(false);
+
+    switch (optionsList[index]) {
+      case "Publication date (descending)":
+        dispatch(sortCarsByPublication("year"));
+        break;
+      
+      case "Price (ascending)": 
+        dispatch(sortCarsByPriceUp("price"));
+        break;
+      
+      case "Price (descending)":
+        dispatch(sortCarsByPriceDown("price"));
+        break;
+
+      case "Mileage (descending)":
+        dispatch(sortCarsByMileageDown("mileage"));
+        break;
+
+      case "Mileage (ascending)": 
+        dispatch(sortCarsByMileageUp("mileage"));
+        break;
+
+      default:
+        console.log("App");
+    }
   };
 
   const handleKeyDown = (index) => (e) => {
@@ -76,15 +111,22 @@ export const CustomSelect = () => {
 
   return (
     <div className="CustomSelect wrapper">
-     
       <div className="CustomSelect__container">
         <div className="CustomSelect__preview">
           <span className="CustomSelect__text">Sort by</span>
 
           {arrowDirection === "up" ? (
-            <img className="CustomSelect__arrows" src={arrowAscending} alt="up" />
+            <img
+              className="CustomSelect__arrows"
+              src={arrowAscending}
+              alt="up"
+            />
           ) : (
-            <img className="CustomSelect__arrows" src={arrowDescending} alt="down" />
+            <img
+              className="CustomSelect__arrows"
+              src={arrowDescending}
+              alt="down"
+            />
           )}
 
           <button

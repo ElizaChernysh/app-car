@@ -1,6 +1,6 @@
 import { Header } from './components/Header/Header';
-import './App.scss';
 import './custom.scss';
+import './App.scss';
 import Options from './components/Options/Obtions';
 import InputEmail from './components/InputEmail/InputEmail';
 import Questions from './components/Questions/Questions';

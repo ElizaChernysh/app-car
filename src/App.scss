@@ -1,9 +1,10 @@
-@import "~bootstrap/scss/bootstrap";
+// @import "~bootstrap/scss/bootstrap";
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 body {
@@ -13,6 +14,10 @@ body {
 
 h1 {
   margin: 0;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
 }
 
 ul,

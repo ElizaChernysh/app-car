@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import './Cars.scss';
 
 const Cars = () => {
@@ -20,8 +20,8 @@ const Cars = () => {
               <p className='Cars__model'>
                 <span className='Cars__year'>{car.year}</span>{car.model}
               </p>
-              <p className='Cars__info'>{car.mileage}{' | '}Automatic{' | '}{car.trim}</p>
-              <p className='Cars__price'>${car.make}</p>
+              <p className='Cars__info'>{car.mileage}{' km'}{' | '}Automatic{' | '}{car.trim}</p>
+              <p className='Cars__price'>${car.price}</p>
               </div>
             </li>
           ))

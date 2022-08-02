@@ -1,5 +1,10 @@
 @import "../../utils/vars";
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header {
   background-image: url(../../image/header/background.jpg);
   background-repeat: no-repeat;
@@ -43,6 +48,7 @@
   }
 
   &__title {
+    // font-family: 'Noto Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 50px;

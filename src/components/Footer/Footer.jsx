@@ -31,8 +31,6 @@ const Footer = () => {
               <img src={instagram} alt="Go to the Instagram link" />
             </a>
           </div>
-
-          {/* </div> */}
         </section>
       </div>
     </div>

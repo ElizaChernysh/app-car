@@ -6,7 +6,6 @@ import "./Header.scss";
 import { ButtonComponent } from "./Button";
 
 export const Header = () => {
-
   return (
     <header className="header">
       <div className="wrapper">
@@ -18,7 +17,10 @@ export const Header = () => {
           <div className="header__wrapper-links">
             <nav className="header__nav">
               <ul className="header__list">
-                <li className="header__item">Inventory</li>
+                <li className="header__item">
+                  Inventory
+                  {/* <a href="#inventory">Inventory</a> */}
+                </li>
                 <li className="header__item">Financing </li>
                 <li className="header__item">Contacts</li>
               </ul>
