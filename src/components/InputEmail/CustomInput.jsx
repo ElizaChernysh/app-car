@@ -1,25 +1,46 @@
 import { Form, Button } from "react-bootstrap";
-import React, { useState } from "react";
+import {useForm} from 'react-hook-form';
 import "./InputEmail.scss";
 import styled from "styled-components";
 
 export const CustomInput = () => {
-  // const [isSuccess, setIsSuccess] = useState(false);
+  const {
+    register,
+    formState: { errors, isValid},
+    handleSubmit,
+    reset,
+  } = useForm({
+    mode: "onBlur"
+  });
+
+  const onSubmit = (data) => {
+    reset();
+  }
 
   return (
-    <form>
+    <form onSubmit={handleSubmit(onSubmit)}>
       <div className="Input-group">
         <CustomControl
           placeholder="Enter your email"
-          aria-describedby="basic-addon2"
+          // aria-describedby="basic-addon2"
           as={Form.Control}
-          type="email"
+          // type="email"
+          {...register('email', {
+            required: "Enter email",
+            pattern: {
+             value: /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$/,
+             message: "Incorrect email"
+            } 
+
+          })}
+          className={errors?.email ? 'Input__error' : ''}
         />
+        {errors?.email && 
+        <p style={{color: 'red'}}>{errors?.errorsmail?.message}</p>
+        }
         <CustomButton
           as={Button}
           variant="outline-dark"
-          // onClick={() => setIsSuccess(true)}
-          // className={isSuccess && "success"}
           type="submit"
         >
           Subscribe now
