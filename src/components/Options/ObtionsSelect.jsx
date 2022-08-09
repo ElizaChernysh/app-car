@@ -1,13 +1,29 @@
 // import { Form } from "react-bootstrap";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { getCarsByYear, getCarsByTrim, getCarsByModel, getCarsByMileage } from "../../store/reducers/carsSlice.jsx";
 import './ObtionsSelect.scss';
 
-export const OptionComponent = ({list}) => {
+export const OptionComponent = ({list, title, changes}) => {
   const [isOptionsOpen, setIsOptionsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(0);
-  const [activeOption, setActiveOption] = useState('Year');
+  const [activeOption, setActiveOption] = useState(title);
+
+  const dispatch = useDispatch();
 
   const optionsList = list;
+
+  useEffect(() => {
+    if (changes === "byYear") {
+      dispatch(getCarsByYear(activeOption))
+    } else if (changes === "byTrim") {
+      dispatch(getCarsByTrim(activeOption))
+    } else if (changes === "byModel") {
+      dispatch(getCarsByModel(activeOption))
+    } else if (changes === "byMileage") {
+      dispatch(getCarsByMileage(activeOption))
+    }
+  }, [activeOption, changes, dispatch]);
 
   const toggleOptions = () => {
     setIsOptionsOpen(!isOptionsOpen);
@@ -33,7 +49,7 @@ export const OptionComponent = ({list}) => {
         <button
           type="button"
           aria-haspopup="listbox"
-          className={isOptionsOpen ? "OptionComponent__expanded" : ""}
+          className={activeOption !== title ? "OptionComponent__button   OptionComponent__expanded" : "OptionComponent__button"}
           aria-expanded={isOptionsOpen}
           onClick={toggleOptions}
         >
@@ -56,7 +72,7 @@ export const OptionComponent = ({list}) => {
               onClick={() => {
                 setSelectedOption(index);
                 setIsOptionsOpen(false);
-                setActiveOption(optionsList[index])
+                setActiveOption(optionsList[index]);
               }}
             >
               {option}

@@ -1,4 +1,5 @@
 export const year  = [
+  "Year",
   2014,
   2015,
   2016,
@@ -7,7 +8,7 @@ export const year  = [
   2019
 ];
 
-export const Make = [
+export const make = [
   "Honda",
   "Kia",
   "Toyota",
@@ -15,6 +16,7 @@ export const Make = [
 ];
 
 export const model = [
+  "Model",
   "Volkswagen Tiguan",
   "Toyota Highlander XLE",
   "Toyota Highlander LE A...",
@@ -24,4 +26,15 @@ export const model = [
   "Mercedes-Benz GLE-Cl..."
 ];
 
-export const trim = [];
+export const trim = [
+  "Trim",
+  "Diesel",
+  "Gas"
+];
+
+export const mileage= [
+  "Mileage",
+  "0-50000",
+  "50000-100000",
+  "100000-150000"
+]

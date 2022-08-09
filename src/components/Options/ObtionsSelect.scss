@@ -4,17 +4,21 @@
   padding-top: 20px;
 
   &__container {
-    width: 100px;
+    // width: 100px;
   }
 
   &__button {
-    border: 0;
-    border-radius: 4px;
-    background: hotpink;
-    width: 100%;
-    padding: 6px 8px;
+    display: flex;
+    border: 1px solid #bdbdbd;
+    border-radius: 15px;
+    background: transparent;
+    width: 170px;
+    padding: 14px 0 14px 16px;
     position: relative;
+    font-size: 15px;
+    line-height: 20px;
     text-align: left;
+    margin-right: 20px;
 
     &:hover {
       cursor: pointer;
@@ -22,22 +26,29 @@
 
     &::after {
       position: absolute;
-        right: 6px;
-        top: 4px;
-        content: "\2191";
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      content: url(../../image/button-arrow/arrow.svg);
     }
   }
 
-  &__expanded::after {
-    content: "\2193";
+  &__expanded {
+    border: 1px solid #df4e3c;
   }
 
   &__options {
-  border: 1px solid hotpink;
-  display: none;
-  list-style: none;
-  padding: 4px 0;
-  margin-top: -4px;
+    border: 1px solid #c4c4c4;
+    border-radius: 15px;
+    box-shadow: 0px 0px 27px rgba(0, 0, 0, 0.04);
+    background-color: #fff;
+    width: 170px;
+    display: none;
+    list-style: none;
+    padding: 4px 0;
+    // margin-top: -4px;
+    position: relative;
+    top: -50px;
   }
 
   &__show {
@@ -45,19 +56,18 @@
   }
 
   &__item {
-    padding: 6px 10px;
+    padding: 20px 0 10px 16px;
 
     &:hover,
     &:active,
     &:hover {
-    background: pink;
-    cursor: pointer;
+      color: #df4e3c;
+      cursor: pointer;
     }
   }
-
 }
 
 .OptionComponent__item[aria-selected="true"] {
-  background: pink;
+  color: #df4e3c;
   cursor: pointer;
 }

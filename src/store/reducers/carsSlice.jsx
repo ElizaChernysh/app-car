@@ -30,7 +30,7 @@ export const carsSlice = createSlice({
       if (action.payload === 'Year') {
         state.cars = CarsList;
       } else {
-        state.cars = CarsList.filter(item => item.year === action.payload)
+        state.cars = CarsList.filter(item => item.year == action.payload)
       }
     },
 
