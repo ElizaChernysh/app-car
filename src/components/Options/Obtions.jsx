@@ -1,8 +1,9 @@
 import React, {useState} from "react";
-import { Form } from "react-bootstrap";
+import { Form, FormSelect } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { getCarsByYear, getCarsByTrim, getCarsByModel, getCarsByMileage, getAllCars} from "../../store/reducers/carsSlice";
 import { CustomSelect } from "../CustomSelect/CustomSelect";
+import { OptionComponent } from "./ObtionsSelect";
 import Cars from "../Cars/Cars.jsx";
 // import { SelectComponent } from "./SelectComponent.jsx";
 import "./Options.scss";
@@ -40,7 +41,7 @@ const Options = () => {
       <div className="wrapper">
         <h2 className="Options__title">CURRENT OFFERS</h2>
         <div className="Options__selects">
-          <Form.Select 
+          <Form.Select
             className="Options__select" 
             onChange={event => handleChangeYear(event)}
             value={yearOption} 
@@ -113,6 +114,7 @@ const Options = () => {
           </button>
         </div>
       </div>
+      <OptionComponent list={[1, 2]}/>
       <CustomSelect />
       <Cars />
     </div>

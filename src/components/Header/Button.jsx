@@ -19,6 +19,7 @@ const CustomButton = styled.button`
   font-weight: 500;
   font-size: 20px;
   line-height: 27px;
+  background: transparent;
 
   &:hover {
     color: #000;
@@ -32,5 +33,4 @@ const CustomButton = styled.button`
     background-color: transparent;
     box-shadow: none;
   }
-
 `;

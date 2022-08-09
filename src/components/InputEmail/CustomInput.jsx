@@ -1,48 +1,43 @@
 import { Form, Button } from "react-bootstrap";
-import {useForm} from 'react-hook-form';
+import { useForm } from "react-hook-form";
 import "./InputEmail.scss";
 import styled from "styled-components";
 
 export const CustomInput = () => {
   const {
     register,
-    formState: { errors, isValid},
+    formState: { errors },
     handleSubmit,
     reset,
   } = useForm({
-    mode: "onBlur"
+    mode: "onBlur",
   });
 
   const onSubmit = (data) => {
     reset();
-  }
+  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="Input-group">
         <CustomControl
           placeholder="Enter your email"
-          // aria-describedby="basic-addon2"
           as={Form.Control}
-          // type="email"
-          {...register('email', {
+          className="is-invalid"
+          type="email"
+          {...register("email", {
             required: "Enter email",
             pattern: {
-             value: /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$/,
-             message: "Incorrect email"
-            } 
-
+              value: /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$/,
+              message: "Incorrect email",
+            },
           })}
-          className={errors?.email ? 'Input__error' : ''}
         />
-        {errors?.email && 
-        <p style={{color: 'red'}}>{errors?.errorsmail?.message}</p>
-        }
-        <CustomButton
-          as={Button}
-          variant="outline-dark"
-          type="submit"
-        >
+        <div id="validationServer03Feedback" class="invalid-feedback">
+          Incorrect email
+        </div>
+
+        <CustomButton as={Button} variant="outline-dark" type="submit">
           Subscribe now
         </CustomButton>
       </div>
