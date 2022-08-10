@@ -1,10 +1,11 @@
 .OptionComponent {
   display: flex;
+  // align-items: center;
   justify-content: center;
-  padding-top: 20px;
+  // padding-top: 20px;
 
   &__container {
-    // width: 100px;
+    position: relative;
   }
 
   &__button {
@@ -13,7 +14,7 @@
     border-radius: 15px;
     background: transparent;
     width: 170px;
-    padding: 14px 0 14px 16px;
+    padding: 13px 0 13px 16px;
     position: relative;
     font-size: 15px;
     line-height: 20px;
@@ -46,9 +47,8 @@
     display: none;
     list-style: none;
     padding: 4px 0;
-    // margin-top: -4px;
-    position: relative;
-    top: -50px;
+    position: absolute;
+    top: 0;
   }
 
   &__show {

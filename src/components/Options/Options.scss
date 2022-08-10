@@ -22,8 +22,13 @@
 
   &__selects {
     display: flex;
-
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 24px;
+  }
+
+  &__selects-wrapper {
+    display: flex;
   }
 
   &__select {
@@ -38,8 +43,12 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
-
     padding: 14px 110px;
 
+    &:hover {
+      color: $color-text-white;
+      font-size: 15px;
+      line-height: 20px;
+    }
   }
 }
