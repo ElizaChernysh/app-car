@@ -4,8 +4,6 @@ import './Cars.scss';
 
 const Cars = () => {
   const cars = useSelector((state) => state.cars.cars);
-  // const dispatch = useDispatch();
-  console.log(cars);
 
   return (
     <div className='Cars wrapper'>

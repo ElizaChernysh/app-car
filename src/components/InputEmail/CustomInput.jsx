@@ -1,9 +1,16 @@
-import { Form, Button } from "react-bootstrap";
+import { useEffect, useState } from "react";
+import { Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import "./InputEmail.scss";
 import styled from "styled-components";
 
 export const CustomInput = () => {
+  const [isError, setIsError] = useState(false);
+
+  // useEffect(() => {
+
+  // }, [errors?.email])
+
   const {
     register,
     formState: { errors },
@@ -18,13 +25,13 @@ export const CustomInput = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <div className="Input-group">
-        <CustomControl
+    <form className="Form" onSubmit={handleSubmit(onSubmit)}>
+      <div className="Form__group">
+        <input
           placeholder="Enter your email"
-          as={Form.Control}
-          className="is-invalid"
-          type="email"
+          className="Form__input"
+          // className={errors?.email ? "Form__input Form__input-error" : "Form__input"}
+          type="text"
           {...register("email", {
             required: "Enter email",
             pattern: {
@@ -33,31 +40,30 @@ export const CustomInput = () => {
             },
           })}
         />
-        <div id="validationServer03Feedback" class="invalid-feedback">
-          Incorrect email
-        </div>
-
-        <CustomButton as={Button} variant="outline-dark" type="submit">
-          Subscribe now
-        </CustomButton>
+        {errors?.email && (
+            <span className="Form__error">{errors?.email.message}</span>
+        )}
       </div>
+      <CustomButton as={Button} variant="outline-dark" type="submit">
+        Subscribe now
+      </CustomButton>
     </form>
   );
 };
 
-const CustomControl = styled.input`
-  border: 1px solid #bdbdbd;
-  border-radius: 15px;
-  padding: 17px 16px;
-  height: 54px;
-  width: 505px;
+// const CustomControl = styled.input`
+//   border: 1px solid #bdbdbd;
+//   border-radius: 15px;
+//   padding: 17px 16px;
+//   height: 54px;
+//   width: 505px;
 
-  margin-right: 20px;
+//   margin-right: 20px;
 
-  &:focus {
-    border: 1px solid #8d8d8d;
-  }
-`;
+//   &:focus {
+//     border: 1px solid #8d8d8d;
+//   }
+// `;
 
 const CustomButton = styled.button`
   color: #000;

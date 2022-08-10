@@ -7,7 +7,7 @@
 
   &__container {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
   }
 
   &__info {
@@ -33,13 +33,46 @@
   // }
 }
 
-.Input-group {
+.Form {
   display: flex;
   align-items: center;
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    // align-items: center;
+  }
+
+  &__input {
+    border: 1px solid #bdbdbd;
+    border-radius: 15px;
+    padding: 17px 16px;
+    height: 54px;
+    width: 505px;
+
+    margin-right: 20px;
+
+    &:focus {
+      border: 1px solid green;
+    }
+  }
+
+  &__input-error {
+    border: 1px solid #ff2307;
+  }
+
+  &__error {
+    position: absolute;
+    font-size: 10px;
+    line-height: 26px;
+    letter-spacing: -0.523077px;
+    color: $color-tomato;
+    bottom: -25px;
+    left: 16px;
+  }
 }
 
 .success {
-  border: 1px solid #507A36;
+  border: 1px solid #507a36;
 }
-
-

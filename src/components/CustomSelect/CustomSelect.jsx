@@ -31,11 +31,6 @@ export const CustomSelect = () => {
     } else if (value.includes("descending")) {
       setArrowDirection("down");
     }
-
-    // if (value === 'Price (ascending)') {
-    //   dispatch(sortCarsByPublication('price'))
-    //   dispatch(sortCarsByPublication('year'));
-    // }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedOption]);
 
