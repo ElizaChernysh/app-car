@@ -29,8 +29,8 @@ export const CustomInput = () => {
       <div className="Form__group">
         <input
           placeholder="Enter your email"
-          className="Form__input"
-          // className={errors?.email ? "Form__input Form__input-error" : "Form__input"}
+          // className="Form__input"
+          className={errors?.email ? "Form__input Form__input-error" : "Form__input"}
           type="text"
           {...register("email", {
             required: "Enter email",

@@ -45,6 +45,7 @@
   }
 
   &__input {
+    outline: none;
     border: 1px solid #bdbdbd;
     border-radius: 15px;
     padding: 17px 16px;
@@ -53,13 +54,31 @@
 
     margin-right: 20px;
 
+    // &::before {
+    //   content: url("../../image/input/success.svg");
+    //   display: block;
+    //   height: 10px;
+    //   width: 10px;
+    //   top: 0;
+    // }
+
     &:focus {
-      border: 1px solid green;
+      border: 1px solid #507a36;
+      background-image: url("../../image/input/success.svg");
+      background-position: center right 20px;
+      background-repeat: no-repeat;
     }
   }
 
   &__input-error {
-    border: 1px solid #ff2307;
+    &:focus {
+      display: block;
+      border: 1px solid #ff2307;
+      background-image: url("../../image/input/mistake.svg");
+      background-position: center right 20px;
+      background-repeat: no-repeat;
+      padding-right: 20px;
+    }
   }
 
   &__error {
@@ -75,4 +94,7 @@
 
 .success {
   border: 1px solid #507a36;
+  background-image: url("../../image/input/success.svg");
+  background-position: center right 20px;
+  background-repeat: no-repeat;
 }
